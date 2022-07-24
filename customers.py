@@ -196,7 +196,7 @@ def add_customer():
     label_2 = Label(canvas,width=10,height=1,text="GST type", font=('arial 12'),background="#1b3857",fg="white") 
     window_label_2 = canvas.create_window(62, 565, anchor="nw", window=label_2)
 
-    comb_cus_2 = ttk.Combobox(canvas, font=('arial 10'),foreground="white")
+    comb_cus_2 = ttk.Combobox(canvas, font=('arial 10'),foreground="white",selectcolor="#2f516f")
     comb_cus_2['values'] = ("Choose...","GST registered Regular","GST registered-Composition","GST unregistered","Consumer","Overseas","SEZ","Deemed exports-EOU's STP's EHTP's etc",)
     comb_cus_2.current(0)
     window_comb_cus_2 = canvas.create_window(75, 595, anchor="nw", width=245, height=30,window=comb_cus_2)
@@ -248,7 +248,7 @@ def add_customer():
     window_label_1 = canvas.create_window(645, 775, anchor="nw", window=label_1)
 
     chk_str = StringVar()
-    chkbtn1 = Checkbutton(canvas, text = "Same As Billing Address", variable = chk_str, onvalue = 1, offvalue = 0, font=("arial", 10),background="#1b3857",foreground="white")
+    chkbtn1 = Checkbutton(canvas, text = "Same As Billing Address", variable = chk_str, onvalue = 1, offvalue = 0, font=("arial", 10),background="#1b3857",foreground="white",selectcolor="#2f516f")
     chkbtn1.select()
     window_chkbtn_1 = canvas.create_window(865, 775, anchor="nw", window=chkbtn1)
 
@@ -307,7 +307,7 @@ def add_customer():
     window_entry_cus_15 = canvas.create_window(1010, 1085, anchor="nw", height=30,window=entry_cus_15)
 
     chk_str_1 = StringVar()
-    chkbtn2 = Checkbutton(canvas, text = "Agree to terms and conditions", variable = chk_str_1, onvalue = 1, offvalue = 0, font=("arial", 10),background="#1b3857",foreground="white")
+    chkbtn2 = Checkbutton(canvas, text = "Agree to terms and conditions", variable = chk_str_1, onvalue = 1, offvalue = 0, font=("arial", 10),background="#1b3857",foreground="white",selectcolor="#2f516f")
     chkbtn2.select()
     window_chkbtn_2 = canvas.create_window(69, 1150, anchor="nw", window=chkbtn2)
 

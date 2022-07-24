@@ -338,7 +338,7 @@ def add_invoice():
         window_label_1 = canvas.create_window(645, 775, anchor="nw", window=label_1)
 
         chk_str = StringVar()
-        chkbtn1 = Checkbutton(canvas, text = "Same As Billing Address", variable = chk_str, onvalue = 1, offvalue = 0, font=("arial", 10),background="#1b3857",foreground="white")
+        chkbtn1 = Checkbutton(canvas, text = "Same As Billing Address", variable = chk_str, onvalue = 1, offvalue = 0, font=("arial", 10),background="#1b3857",foreground="white",selectcolor="#2f516f")
         chkbtn1.select()
         window_chkbtn_1 = canvas.create_window(865, 775, anchor="nw", window=chkbtn1)
 
@@ -397,7 +397,7 @@ def add_invoice():
         window_entry_cus_15 = canvas.create_window(1010, 1085, anchor="nw", height=30,window=entry_cus_15)
 
         chk_str_1 = StringVar()
-        chkbtn2 = Checkbutton(canvas, text = "Agree to terms and conditions", variable = chk_str_1, onvalue = 1, offvalue = 0, font=("arial", 10),background="#1b3857",foreground="white")
+        chkbtn2 = Checkbutton(canvas, text = "Agree to terms and conditions", variable = chk_str_1, onvalue = 1, offvalue = 0, font=("arial", 10),background="#1b3857",foreground="white",selectcolor="#2f516f")
         chkbtn2.select()
         window_chkbtn_2 = canvas.create_window(69, 1150, anchor="nw", window=chkbtn2)
 
